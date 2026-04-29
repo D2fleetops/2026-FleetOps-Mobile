@@ -12,12 +12,6 @@
 .swiftpm/
 migrate_working_dir/
 
-# FVM - Flutter Version Management
-.fvm/flutter_sdk/
-.fvm/versions/
-.fvm/release
-.fvm/version
-
 # IntelliJ related
 *.iml
 *.ipr
@@ -49,3 +43,10 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+id/app/profile
+/android/app/release
+/app/profile
+/android/app/release
+
+# FVM Version Cache
+.fvm/
