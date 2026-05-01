@@ -4,6 +4,7 @@ import 'package:fleetops_mobile/features/auth/presentation/widgets/clickable_tex
 import 'package:fleetops_mobile/features/auth/presentation/widgets/custom_app_bar.dart';
 import 'package:fleetops_mobile/features/auth/presentation/widgets/custom_button.dart';
 import 'package:fleetops_mobile/features/auth/presentation/widgets/custom_text_field.dart';
+import 'package:fleetops_mobile/features/main/presentation/page/main_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -82,7 +83,9 @@ class LoginPage extends StatelessWidget {
                   obscureText: true,
                 ),
                 SizedBox(height: 24.0),
-                CustomButton(text: 'Masuk', onPressed: () {}),
+                CustomButton(text: 'Masuk', onPressed: () {
+                    Navigator.pushReplacementNamed(context, MainPage.routeName);
+                }),
               ],
             ),
             SizedBox(height: 16.0),
